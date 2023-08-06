@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product preview card component</title>
+  </head>
+  <body>
+    <section class="card">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="images/image-product-desktop.jpg"
+          alt=""
+        />
+        <source
+          media="(max-width: 1440px)"
+          srcset="images/image-product-mobile.jpg"
+          alt=""
+        />
+
+        <img
+          src="./public/images/image-product-mobile.jpg"
+          alt="une illustration"
+        />
+      </picture>
+      <div class="card-info">
+        <span>perfume</span>
+        <h2>gabrielle essence <br />eau de parfum</h2>
+        <p class="description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL
+        </p>
+        <div class="price">
+          <div class="price1">$199.99</div>
+          <div class="price2">$169.98</div>
+        </div>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
